@@ -5,9 +5,7 @@ def add_song(songs):
     if title:
         songs.append({'title': title, 'artist_name': artist_name})
         print("Song added to playlist")
-        print(songs)
+        print(f"{title} - {artist_name}")
         return 
     else:
         print("error")
-
-add_song()
