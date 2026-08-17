@@ -1,3 +1,5 @@
+from add import add_song
+
 songs = ["Queen - Bohemian Rhapsody",
         "Michael Jackson - Billie Jean",
         "Nirvana - Smells Like Teen Spirit",
