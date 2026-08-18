@@ -1,4 +1,5 @@
 from add import add_song
+from delete import delete_song
 
 songs = []
 
@@ -14,14 +15,19 @@ def main():
                 count += 1
 
         print("\n1. Add")
-        print("2. Exit")
-        choice = input("Select (1/2): ")
+        print("2. Delete")
+        print("3. Exit")
+        choice = input("Select (1/2/3): ")
 
         if choice == "1":
             add_song(songs)
         elif choice == "2":
+            delete_song(songs)
+        elif choice == "3":
             print("Babush")
             break
         else:
-            print("Invalid")
-main()
+            print("Invalid choice")
+
+if __name__ == "__main__":
+    main()
